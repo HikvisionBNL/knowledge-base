@@ -1,4 +1,4 @@
-# Customer Knowledge Base
+# Hikvision Knowledge Base
 
 This repository publishes a simple static customer knowledge base to GitHub Pages.
 

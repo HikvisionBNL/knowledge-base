@@ -1,6 +1,6 @@
 ---
 id: home
-title: Customer Knowledge Base
+title: Hikvision Knowledge Base
 summary: Search customer-facing how-to documents and troubleshooting notes.
 keywords: [knowledge base, support, case]
 sectionTitle: How to use this site
