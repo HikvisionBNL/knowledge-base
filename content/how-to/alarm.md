@@ -10,4 +10,7 @@ downloads:
   - title: Connect External Alarm Output to a DVR
     type: PDF
     href: files/how-to/connect-external-alarm-output-to-dvr.pdf
+  - title: Link Camera to AX Pro on Hik-Connect App
+    type: PDF
+    href: files/how-to/link-camera-to-ax-pro-on-hik-connect-app.pdf
 ---
