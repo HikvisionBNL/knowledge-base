@@ -72,6 +72,11 @@
                   "title": "Configure People Falling Down Detection on AIOP DeepinMind NVR",
                   "type": "PDF",
                   "href": "files/how-to/configure-people-falling-down-detection-on-aiop-deepinmind-nvr.pdf"
+                },
+                {
+                  "title": "HDD Compatible List for Hikvision DVR/NVR",
+                  "type": "PDF",
+                  "href": "files/how-to/hdd-compatible-list-for-hikvision-dvr-nvr-20250630.pdf"
                 }
               ]
             },
