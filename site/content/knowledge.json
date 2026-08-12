@@ -587,6 +587,39 @@
                       "html": "<p>Content will be added here.</p>"
                     }
                   ]
+                },
+                {
+                  "id": "troubleshooting-hcp",
+                  "title": "HCP",
+                  "folder": true,
+                  "sections": [
+                    {
+                      "title": "Details",
+                      "html": "<p>For HikCentral Professional certificate-related issues, it is usually necessary to provide issue screenshots, the license code, and TeamViewer remote access if local operation is required.</p>"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "troubleshooting-hcp-license-file-corrupted",
+                      "title": "License File Corrupted",
+                      "sections": [
+                        {
+                          "title": "Details",
+                          "html": "<ol><li>Hikvision submits a license unbinding request.</li><li>Stop the HCP SYS service.</li><li>Delete the fnood file in the root directory of drive C: after backing it up.</li><li>Restart the HCP SYS service.</li><li>Activate the license again.</li></ol>"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "troubleshooting-hcp-hcl-license-activated-on-hcp",
+                      "title": "HCL License Activated on HCP",
+                      "sections": [
+                        {
+                          "title": "Details",
+                          "html": "<ol><li>Save the customer's existing license on HCP, and then deactivate it locally.</li><li>Uninstall HCP and install HCL.</li><li>Hikvision unbinds the HCL license in the back-end system. The customer activates the license on the local HCL server and then deactivates it again. Hikvision confirms that the final license status in the system is deactivated.</li><li>The commercial team submits the license cancellation request.</li></ol>"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
