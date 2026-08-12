@@ -567,17 +567,6 @@
               ],
               "children": [
                 {
-                  "id": "troubleshooting-hik-partner-pro",
-                  "title": "Hik-Partner Pro",
-                  "folder": true,
-                  "sections": [
-                    {
-                      "title": "Details",
-                      "html": "<p>Content will be added here.</p>"
-                    }
-                  ]
-                },
-                {
                   "id": "troubleshooting-hik-connect",
                   "title": "Hik-Connect",
                   "folder": true,
