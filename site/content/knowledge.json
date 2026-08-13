@@ -537,18 +537,7 @@
                   "sections": [
                     {
                       "title": "Details",
-                      "html": "<p>Content will be added here.</p>"
-                    }
-                  ]
-                },
-                {
-                  "id": "troubleshooting-access-control",
-                  "title": "Access Control",
-                  "folder": true,
-                  "sections": [
-                    {
-                      "title": "Details",
-                      "html": "<p>Content will be added here.</p>"
+                      "html": "<p>Normally, provide the following information:</p><ol><li>Device model, firmware version, and serial number</li><li>Specific symptom, reproduction frequency, and environment topology</li><li>Configuration screenshots and a video showing the issue</li><li>Troubleshooting steps already performed, such as restarting, resetting, upgrading, or changing the network</li><li>HPP after-sales code valid for 72 hours, and remote log collection enabled for 72 hours</li></ol><p>For specific zone logic, configuration methods, firmware upgrade questions, and similar topics, please consult separately.</p>"
                     }
                   ]
                 }
@@ -602,11 +591,11 @@
                   "children": [
                     {
                       "id": "troubleshooting-hcp-license-file-corrupted",
-                      "title": "License File Corrupted",
+                      "title": "License File damaged",
                       "sections": [
                         {
                           "title": "Details",
-                          "html": "<ol><li>Hikvision submits a license unbinding request.</li><li>Stop the HCP SYS service.</li><li>Delete the fnood file in the root directory of drive C: after backing it up.</li><li>Restart the HCP SYS service.</li><li>Activate the license again.</li></ol>"
+                          "html": "<ol><li>Hikvision submits a license unbinding request.</li><li>Stop the HCP SYS service.</li><li>Delete the C:\\fnood after backing it up.</li><li>Restart the HCP SYS service.</li><li>Activate the license again.</li></ol>"
                         }
                       ]
                     },
