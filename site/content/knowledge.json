@@ -217,7 +217,6 @@
             {
               "id": "troubleshooting-camera",
               "title": "Camera",
-              "summary": "Camera troubleshooting workflow and common issue cases.",
               "folder": true,
               "children": [
                 {
@@ -344,7 +343,6 @@
             {
               "id": "troubleshooting-nvr",
               "title": "NVR",
-              "summary": "NVR troubleshooting paths.",
               "folder": true,
               "children": [
                 {
@@ -498,7 +496,6 @@
             {
               "id": "troubleshooting-non-video",
               "title": "Non-Video",
-              "summary": "Non-video troubleshooting paths.",
               "folder": true,
               "children": [
                 {
@@ -528,7 +525,6 @@
             {
               "id": "troubleshooting-cloud-software",
               "title": "Cloud Software",
-              "summary": "Cloud software troubleshooting paths.",
               "folder": true,
               "children": [
                 {

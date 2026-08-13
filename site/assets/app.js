@@ -91,7 +91,9 @@ function renderArticle() {
   const node = findNode(state.data.tree, state.activeId) || state.data.tree[0];
   const sections = node.sections || [];
   const downloads = node.downloads || collectDownloads(node).filter((item) => item.title);
-  articleEl.innerHTML = `<h2>${node.title}</h2><p class="meta">${node.summary || "Select an item from the left tree."}</p>${renderDownloads(downloads)}${sections.map((section) => `<h3>${section.title}</h3>${section.html}`).join("")}${!sections.length && !downloads.length ? '<p class="empty">Content will be added here.</p>' : ""}`;
+  const meta = node.summary ? `<p class="meta">${node.summary}</p>` : "";
+  const empty = !node.folder && !sections.length && !downloads.length ? '<p class="empty">Content will be added here.</p>' : "";
+  articleEl.innerHTML = `<h2>${node.title}</h2>${meta}${renderDownloads(downloads)}${sections.map((section) => `<h3>${section.title}</h3>${section.html}`).join("")}${empty}`;
 }
 function bindControls() {
   searchInput.addEventListener("input", (event) => { state.query = event.target.value; renderTree(); });
