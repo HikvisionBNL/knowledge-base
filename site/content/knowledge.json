@@ -219,12 +219,6 @@
               "title": "Camera",
               "summary": "Camera troubleshooting workflow and common issue cases.",
               "folder": true,
-              "sections": [
-                {
-                  "title": "Details",
-                  "html": "<p>Camera troubleshooting workflow content will be added here.</p>"
-                }
-              ],
               "children": [
                 {
                   "id": "troubleshooting-camera-offline",
@@ -352,12 +346,6 @@
               "title": "NVR",
               "summary": "NVR troubleshooting paths.",
               "folder": true,
-              "sections": [
-                {
-                  "title": "Details",
-                  "html": "<p>NVR troubleshooting workflow content will be added here.</p>"
-                }
-              ],
               "children": [
                 {
                   "id": "troubleshooting-nvr-ipc-offline",
@@ -512,12 +500,6 @@
               "title": "Non-Video",
               "summary": "Non-video troubleshooting paths.",
               "folder": true,
-              "sections": [
-                {
-                  "title": "Details",
-                  "html": "<p>Non-video troubleshooting workflow content will be added here.</p>"
-                }
-              ],
               "children": [
                 {
                   "id": "troubleshooting-video-intercom",
@@ -548,12 +530,6 @@
               "title": "Cloud Software",
               "summary": "Cloud software troubleshooting paths.",
               "folder": true,
-              "sections": [
-                {
-                  "title": "Details",
-                  "html": "<p>Cloud software troubleshooting workflow content will be added here.</p>"
-                }
-              ],
               "children": [
                 {
                   "id": "troubleshooting-hik-connect",
