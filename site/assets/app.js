@@ -51,7 +51,8 @@ function renderNodeList(nodes, level, query) {
   ul.className = "tree-list";
   for (const node of nodes) {
     if (!nodeMatches(node, query)) continue;
-    const hasChildren = Boolean((node.children && node.children.length) || node.folder);
+    const hasChildPages = Boolean(node.children && node.children.length);
+    const hasChildren = hasChildPages || Boolean(node.folder);
     const isOpen = state.openIds.has(node.id) || Boolean(query);
     const li = document.createElement("li");
     li.className = "tree-item";
@@ -64,7 +65,7 @@ function renderNodeList(nodes, level, query) {
       if (hasChildren) state.openIds[state.openIds.has(node.id) ? "delete" : "add"](node.id);
       renderTree();
       renderArticle();
-      if (window.innerWidth <= 760) document.body.classList.add("sidebar-collapsed");
+      if (window.innerWidth <= 760 && !hasChildPages) document.body.classList.add("sidebar-collapsed");
     });
     li.appendChild(row);
     if (node.children && node.children.length && isOpen) li.appendChild(renderNodeList(node.children, level + 1, query));
