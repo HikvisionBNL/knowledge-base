@@ -120,6 +120,7 @@ function closeQuestionModal() {
 async function init() {
   const response = await fetch("content/knowledge.json", { cache: "no-store" });
   state.data = await response.json();
+  if (window.innerWidth <= 760) document.body.classList.add("sidebar-collapsed");
   bindControls();
   renderTree();
   renderArticle();
