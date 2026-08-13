@@ -34,14 +34,25 @@
     </div>
     <button
       class="question-button"
+      id="questionButton"
       type="button"
-      data-tally-open="gDPJ7d"
-      data-tally-layout="modal"
-      data-tally-width="520"
-      data-tally-hide-title="1"
       aria-label="提问"
     >提问</button>
-    <script async src="https://tally.so/widgets/embed.js"></script>
+    <div class="question-modal" id="questionModal" aria-hidden="true">
+      <div class="question-backdrop" id="questionBackdrop"></div>
+      <section class="question-panel" role="dialog" aria-modal="true" aria-label="提问">
+        <div class="question-panel-header">
+          <strong>提问</strong>
+          <button class="question-close" id="questionClose" type="button" aria-label="Close">×</button>
+        </div>
+        <iframe
+          id="questionFrame"
+          title="Question form"
+          data-src="https://tally.so/r/gDPJ7d?transparentBackground=1"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </div>
     <script src="assets/app.js"></script>
   </body>
 </html>

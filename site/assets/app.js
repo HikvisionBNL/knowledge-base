@@ -12,6 +12,11 @@ const searchStatus = document.getElementById("searchStatus");
 const sidebarToggle = document.getElementById("sidebarToggle");
 const mobileSidebarToggle = document.getElementById("mobileSidebarToggle");
 const railToggle = document.getElementById("railToggle");
+const questionButton = document.getElementById("questionButton");
+const questionModal = document.getElementById("questionModal");
+const questionBackdrop = document.getElementById("questionBackdrop");
+const questionClose = document.getElementById("questionClose");
+const questionFrame = document.getElementById("questionFrame");
 
 function normalize(value) { return String(value || "").toLowerCase(); }
 function searchText(node) {
@@ -93,6 +98,22 @@ function bindControls() {
   sidebarToggle.addEventListener("click", () => document.body.classList.add("sidebar-collapsed"));
   mobileSidebarToggle.addEventListener("click", () => document.body.classList.remove("sidebar-collapsed"));
   railToggle.addEventListener("click", () => document.body.classList.remove("sidebar-collapsed"));
+  questionButton.addEventListener("click", openQuestionModal);
+  questionBackdrop.addEventListener("click", closeQuestionModal);
+  questionClose.addEventListener("click", closeQuestionModal);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeQuestionModal();
+  });
+}
+function openQuestionModal() {
+  if (!questionFrame.src) questionFrame.src = questionFrame.dataset.src;
+  questionModal.classList.add("open");
+  questionModal.setAttribute("aria-hidden", "false");
+  questionClose.focus();
+}
+function closeQuestionModal() {
+  questionModal.classList.remove("open");
+  questionModal.setAttribute("aria-hidden", "true");
 }
 async function init() {
   const response = await fetch("content/knowledge.json", { cache: "no-store" });
