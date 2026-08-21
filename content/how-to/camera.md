@@ -16,4 +16,7 @@ downloads:
   - title: Configure Perimeter Protection for Panoramic Scanner
     type: PDF
     href: files/how-to/configure-perimeter-protection-for-panoramic-scanner.pdf
+  - title: Connect Wi-Fi Cameras to Wireless Network
+    type: PDF
+    href: files/how-to/connect-wifi-cameras-to-wireless-network.pdf
 ---
